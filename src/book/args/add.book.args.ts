@@ -12,17 +12,3 @@ export class AddBookArgs {
   @Field()
   published: string;
 }
-
-@InputType()
-export class UpdateBookArgs {
-  @Field()
-  _id: string;
-  @Field({ nullable: true })
-  title: string;
-  @Field(() => Int, { nullable: true })
-  price: number;
-  @Field({ nullable: true })
-  author: string;
-  @Field({ nullable: true })
-  published: string;
-}
