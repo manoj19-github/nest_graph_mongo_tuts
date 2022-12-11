@@ -5,7 +5,8 @@ import { BookDB, BookDocument } from './schema/book.schema';
 import { BookDocument as BookModel } from '../graphql';
 
 import { BookService } from './book.service';
-import { AddBookArgs, UpdateBookArgs } from './args/add.book.args';
+import { AddBookArgs } from './args/add.book.args';
+import { UpdateBookArgs } from './args/edit.book.args';
 @Resolver((of) => BookDocument)
 export class BookResolver {
   constructor(private readonly bookService: BookService) {}
